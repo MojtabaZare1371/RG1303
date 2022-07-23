@@ -1,0 +1,11 @@
+[Unit]
+Description=Ronika SX1303 Gateway
+
+[Service]
+WorkingDirectory=/opt/semtech/packet_forwarder/lora_pkt_fwd/
+ExecStart=/opt/semtech/packet_forwarder/lora_pkt_fwd/lora_pkt_fwd
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
